@@ -17,44 +17,63 @@ p {
   padding-right: 50px;
   padding-left: 50px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: -100px;
 }
-
-
-.full-width {
-  height: 100%;
-  min-height: 1000px !important;
-}
-
-/* not working */
-.bg {
-  background-image: url("BackgroundImage.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 /*>>>>>>>>>>>>>> HOME PAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
+
 .home_page {
   height: 100vh;
+  background-image: url(asset_path('MagnificHome.jpg'));
+  background-size: cover;
+  background-repeat: none;
 
 }
 
-.home-title {
-  font-size: 160px;
-  margin-top : 45px;
-  float: left;
+.home_title {
+  font-size: 100px;
+  margin-top: 45px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
+
+
+/*>>>>>>>>>>>>>> FLICKITY CAROUSEL <<<<<<<<<<<<<<<<<<*/
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #424242;
+}
+
+.carousel-cell-image {
+  display: block;
+  height: 400px;
+  min-width: 200px;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s;
+          transition: opacity 0.4s;
+}
+
+/* fade in lazy loaded image */
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
+}
+
 
 
 /*>>>>>>>>>>>>>>ABOUT US PAGE>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 .about_title {
   font-size: 100px;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .about_page {
@@ -97,11 +116,12 @@ p {
 
 /*>>>>>>>>>>>>>>>>>>>>>PRODUCTS>>>>>>>>>>>>>>>>>>> */
 
-.modal {
+.card_style {
+  box-shadow: 10px 10px 5px grey;
 }
 
-.EdgeSpec {
-
+.img {
+  width: 100px;
 }
 
 /*>>>>>>>>>>>>>>>>>>>>> DEMOS >>>>>>>>>>>>>>>>>>>*/
@@ -110,25 +130,66 @@ p {
 
 .left-align {
   font-size: 60px;
-  color: red;
-  font-style: bold;
-
 }
 
-/*>>>>>>>>>>>>>>>>HOW TO BUY>>>>>>>>>>>>>>>>>>*/
+.demo {
+  color: blue;
+}
+
+.about_title {
+  color: blue;
+  text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+
+/*>>>>>>>>>>>>>>>>HOWTOBUY>>>>>>>>>>>>>>>>>>*/
 
 
 /////// Need to resize images so that they fit properly on screen.
 /////// Also need to make text and font look awesome!!
 
-.professional_image {
-  text-align: justify;
+.howtobuy{
+  background: red;
 }
 
-.tasfilms {
+.purchase {
+  color: blue;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.how_to_title {
+  color: blue;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.pro_image {
+  text-align: justify;
+  border-radius: 8px;
+}
+
+.tas_film {
   text-align: justify;
 }
 
 .card {
 
+}
+
+.style_pro {
+  box-shadow: 10px 10px 5px grey;
+  padding: 10px 20px
+}
+
+.style_tas {
+  box-shadow: 10px 10px 5px grey;
+  padding: 10px 20px
+}
+
+/*>>>>>>>>>>>>>>>>>>TEMPLATES<<<<<<<<<<<<<<<<<<<*/
+
+
+.img {
+ max-width: 1440px;
+ max-height: 3300px;
+ background: #000000;
 }

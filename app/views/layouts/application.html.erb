@@ -7,8 +7,12 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <% if Rails.env.development? %>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.css">
+    
+
     <script src="http://localhost:3808/webpack-dev-server.js"></script>
+    <script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.js"></script>
   <% end %>
 </head>
 

@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'specsheets/home'
-
-  get 'specsheets/index'
-
   namespace :api do
     get 'specsheets/index'
   end

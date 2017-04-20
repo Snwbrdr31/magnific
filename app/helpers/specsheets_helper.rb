@@ -1,2 +1,0 @@
-module SpecsheetsHelper
-end
