@@ -7,6 +7,7 @@ import Mod from '../images/Mod.jpg';
 import Pro from '../images/Pro.jpg';
 import Tek from '../images/Tek.jpg';
 import Uleds from '../images/Uleds.jpg';
+import magnificlogo from '../images/magnificlogo.png';
 
 
 

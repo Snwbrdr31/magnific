@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { connect } from 'react-redux';
-import MagnificLogo from '../images/MagnificLogo.jpg';
+import magnificlogo from '../images/magnificlogo.png';
 
 class MaterialNavbar extends React.Component {
   render() {
@@ -10,7 +10,7 @@ class MaterialNavbar extends React.Component {
           <div className='nav-fixed'>
             <nav id='nav' className='grey darken-3'>
               <div className='nav-wrapper'>
-                <Link to='/'><img src={MagnificLogo} className='nav-logo'/></Link>
+                <Link to='/'><img src={magnificlogo} className='nav-logo'/></Link>
                 <ul className='right'>
                   <li><Link to='/about_us'>A B O U T - M A G N I F I C</Link></li>
                   <li><Link to='/'>H O M E</Link></li>

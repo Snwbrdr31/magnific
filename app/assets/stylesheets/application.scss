@@ -1,6 +1,7 @@
 @import 'materialize';
 
 body {
+  background-color: grey;
   padding: 0;
   margin-top: 0;
 }
@@ -77,7 +78,6 @@ body { font-family: sans-serif; }
 }
 
 .about_page {
-  background-color: red;
   background-repeat: repeat;
   color: white;
 }
@@ -124,6 +124,9 @@ body { font-family: sans-serif; }
   width: 100px;
 }
 
+.card-action .waves-effect {
+  margin-right: 30px;
+}
 /*>>>>>>>>>>>>>>>>>>>>> DEMOS >>>>>>>>>>>>>>>>>>>*/
 
 
@@ -149,7 +152,6 @@ body { font-family: sans-serif; }
 /////// Also need to make text and font look awesome!!
 
 .howtobuy{
-  background: red;
 }
 
 .purchase {
@@ -165,10 +167,12 @@ body { font-family: sans-serif; }
 .pro_image {
   text-align: justify;
   border-radius: 8px;
+  width: 100%;
 }
 
 .tas_film {
   text-align: justify;
+  width:75%;
 }
 
 .card {
