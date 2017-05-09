@@ -1,32 +1,20 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router';
-import Base from '../images/Base.jpg';
-import Edge from '../images/Edge.jpg';
-import Mod from '../images/Mod.jpg';
-import Pro from '../images/Pro.jpg';
-import Tek from '../images/Tek.jpg';
-import Uleds from '../images/Uleds.jpg';
 import magnificlogo from '../images/magnificlogo.png';
-
-
-
-// Need to fix errors
-// need to get working carousel running and include a link to that product from picture.
-// need descrition of what needs to be said below the carousel
 
 const Home = () => (
 
-        <div className="row body_width home_page">
-          <h1 className='center'><b className='home_title'>Magnific Displays</b></h1><br />
-        </div>
+    <div id ="bg" className="row body_width">
+      <h1 className='center'><b className='home_title'>MAGNIFIC DISPLAYS</b></h1><br />
+    </div>
 
       );
 // Listed below is the flickity crousel if needed for new items //
 //
 //           <div className="carousel container js-flickity"
-//              data-flickity-options=
 //              '{ "lazyLoad": true, "autoPlay": 1800,
+//              data-flickity-options=
 //               "pauseAutoPlayOnHover": true,
 //               "adaptiveHeight": true,"pageDots":
 //               true}'>

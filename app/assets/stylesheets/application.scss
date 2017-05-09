@@ -1,15 +1,12 @@
 @import 'materialize';
-
 body {
   background-color: grey;
   padding: 0;
   margin-top: 0;
 }
-
 li {
   font-size: 18px;
 }
-
 p {
   font-size: 17px;
 }
@@ -20,92 +17,64 @@ p {
   padding-top: 20px;
   padding-bottom: -100px;
 }
-
 /*>>>>>>>>>>>>>> HOME PAGE>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 
-
-.home_page {
+#bg {
   height: 100vh;
   background-image: url(asset_path('MagnificHome.jpg'));
-  background-size: cover;
-  background-repeat: none;
-
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
+
 .home_title {
-  font-size: 100px;
   margin-top: 45px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
 
-/*>>>>>>>>>>>>>> FLICKITY CAROUSEL <<<<<<<<<<<<<<<<<<*/
-
-/* external css: flickity.css */
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-.carousel {
-  background: #424242;
-}
-
-.carousel-cell-image {
-  display: block;
-  height: 400px;
-  min-width: 200px;
-  opacity: 0;
-  -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
-}
-
-/* fade in lazy loaded image */
-.carousel-cell-image.flickity-lazyloaded,
-.carousel-cell-image.flickity-lazyerror {
-  opacity: 1;
-}
-
-
 
 /*>>>>>>>>>>>>>>ABOUT US PAGE>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-.about_title {
-  font-size: 100px;
-  text-shadow: 2px 2px 4px #000000;
+.magnific_title {
+  text-shadow: 2px 2px 4px #424242;
+  color: #212121;
+  font-weight: bold;
 }
 
-.about_page {
-  background-repeat: repeat;
-  color: white;
+#bg {
+  height: 100vh;
+  background-image: url(asset_path('MagnificHome.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+
+@media only screen and (max-width: 200px) {
+  .magnific_title {
+    font-size: 60px !important;
+  }
 }
 
 .about_magnific {
-  font-size: 16px;
+  font-size: 18px;
+  color: #212121;
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
+  font-weight: bold;
 }
-
 .paragraph {
   margin-left: 4%
 }
-
-
-
-
-
-
-
 /*>>>>>>>>>>>>>>>>NAVBAR >>>>>>>>>>>>>>>>>>>*/
 #nav {
   padding-left:20px;
   padding-top: 3px;
   height: 70px;
 }
-
 .nav-logo {
   padding-bottom: 6px;
   padding-top: -2px;
@@ -114,54 +83,70 @@ body { font-family: sans-serif; }
   height: 67px;
 }
 
-/*>>>>>>>>>>>>>>>>>>>>>PRODUCTS>>>>>>>>>>>>>>>>>>> */
 
+
+/*>>>>>>>>>>>>>>>>>>>>>PRODUCTS>>>>>>>>>>>>>>>>>>> */
+.product_title {
+  font-size: 80px;
+  text-shadow: 2px 2px 4px #424242;
+  color: #212121;
+}
 .card_style {
   box-shadow: 10px 10px 5px grey;
 }
 
-.img {
-  width: 100px;
-}
-
-.card-action .waves-effect {
+.waves-effect {
   margin-right: 30px;
 }
-/*>>>>>>>>>>>>>>>>>>>>> DEMOS >>>>>>>>>>>>>>>>>>>*/
-
-
-
-.left-align {
-  font-size: 60px;
+.products_div {
+  width: 45%;
+  float: left;
+  background-color: white;
+  margin-right: 5%;
+  margin-bottom: 6%;
+}
+.products_page {
+  margin-top: 7%;
 }
 
+.btn-xs {
+  width: 100% !important;
+}
+
+
+/*>>>>>>>>>>>>>>>>>>>>> DEMOS >>>>>>>>>>>>>>>>>>>*/
+.tek_title {
+  font-size: 80px;
+  color: #212121;
+  text-shadow: 2px 2px 4px #424242;
+}
+
+.demo_title {
+  font-size: 50px;
+  color: #212121;
+  text-shadow: 1px 1px 2px #424242;
+  font-weight: bold;
+}
+.left-align {
+  font-size: 80px;
+}
 .demo {
   color: blue;
 }
 
-.about_title {
-  color: blue;
-  text-shadow: 2px 2px 4px #FFFFFF;
-}
-
-
 /*>>>>>>>>>>>>>>>>HOWTOBUY>>>>>>>>>>>>>>>>>>*/
 
-
-/////// Need to resize images so that they fit properly on screen.
-/////// Also need to make text and font look awesome!!
-
-.howtobuy{
-}
-
-.purchase {
-  color: blue;
-  text-shadow: 2px 2px 4px #000000;
+.purchase_title {
+  font-size: 70px;
+  color: #212121;
+  text-shadow: 2px 2px 4px #424242;
 }
 
 .how_to_title {
-  color: blue;
-  text-shadow: 2px 2px 4px #000000;
+  font-size: 40px;
+  color: #212121;
+  text-shadow: 2px 2px 4px #424242;
+  font-weight: bold;
 }
 
 .pro_image {
@@ -175,10 +160,6 @@ body { font-family: sans-serif; }
   width:75%;
 }
 
-.card {
-
-}
-
 .style_pro {
   box-shadow: 10px 10px 5px grey;
   padding: 10px 20px
@@ -189,11 +170,12 @@ body { font-family: sans-serif; }
   padding: 10px 20px
 }
 
+
+
 /*>>>>>>>>>>>>>>>>>>TEMPLATES<<<<<<<<<<<<<<<<<<<*/
-
-
 .img {
  max-width: 1440px;
  max-height: 3300px;
  background: #000000;
 }
+/*>>>>>>>>>>>>>>>>MEDIA QUERIES<<<<<<<<<<<<<<<<<<*/
