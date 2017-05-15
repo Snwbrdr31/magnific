@@ -8,6 +8,8 @@ class MaterialNavbar extends React.Component {
 
 componentDidMount() {
   $(".button-collapse").sideNav({
+    edge: 'right',
+    closeOnClick: true,
   });
 }
 
@@ -18,7 +20,8 @@ componentDidMount() {
           <nav id='nav' className="grey darken-4">
             <div className='nav-wrapper'>
               <Link to='/'><img src={magnificlogo} className='left nav-logo'/></Link>
-              <a href="#" data-activates="mobile-demo" className="right button-collapse"><i className="material-icons nav_menu_icon">MENU</i></a>
+              <Link to='/'><link id="phone" className="phone_number" />1-800-721-9088</Link>
+              <a href="#" data-activates="mobile-demo" className="right button-collapse"><i className="material-icons nav_menu_icon">M E N U</i></a>
               <ul id="nav-mobile" className='right hide-on-med-and-down'>
                 <li><Link to='/about_us'>A B O U T - M A G N I F I C</Link></li>
                 <li><Link to='/products'>P R O D U C T S</Link></li>

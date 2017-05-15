@@ -1,12 +1,15 @@
 @import 'materialize';
+
+
 body {
-  background-color: grey;
   padding: 0;
   margin-top: 0;
 }
+
 li {
   font-size: 18px;
 }
+
 p {
   font-size: 17px;
 }
@@ -21,10 +24,11 @@ p {
 
 
 #bg {
-  height: 100vh;
+  height: auto;
   background-image: url(asset_path('MagnificHome.jpg'));
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  margin: 5;
 }
 
 
@@ -38,29 +42,55 @@ p {
 
 /*>>>>>>>>>>>>>>ABOUT US PAGE>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
-.magnific_title {
-  text-shadow: 2px 2px 4px #424242;
-  color: #212121;
-  font-weight: bold;
+#bg, #content-bg {
+    height: 100vh;
+    background-image: url(asset_path('MagnificHome.jpg'));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 #bg {
-  height: 100vh;
-  background-image: url(asset_path('MagnificHome.jpg'));
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-position: center top;
+  padding: 70px 90px 120px 90px;
 }
 
-
-@media only screen and (max-width: 200px) {
-  .magnific_title {
-    font-size: 60px !important;
-  }
+#content-container {
+  position:relative;
 }
+
+#content-bg{
+  position: absolute;
+  min-width: auto;
+  height: auto;
+   top: 20px;
+   right: 0px;
+   bottom: 0px;
+   left: 0px;
+   z-index: 99;
+   background-position: center 10px;
+
+     -webkit-filter: blur(10px);
+     filter: url('/media/blur.svg#blur');
+     filter: blur(10px);
+}
+
+#content{
+  position: relative;
+    z-index: 100;
+    padding: 20px;
+
+}
+
+.magnific_title {
+  text-shadow: 2px 2px 4px #424242;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
 
 .about_magnific {
-  font-size: 18px;
-  color: #212121;
+  font-size: 20px;
+  color: white;
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
@@ -83,21 +113,63 @@ p {
   height: 67px;
 }
 
-
+.phone_number {
+  padding-right: 3px;
+}
 
 /*>>>>>>>>>>>>>>>>>>>>>PRODUCTS>>>>>>>>>>>>>>>>>>> */
+
+#back, #products-bg {;
+  height: 120vh;
+  background-image: url(asset_path('MagnificHome.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#back {
+  background-position: center top;
+  padding: 70px 90px 120px 90px;
+}
+
+#products-container {
+  position:relative;
+}
+
+#products-bg {
+  position: absolute;
+  min-width: auto;
+    top: 20px;
+    right: -10px;
+    bottom: -750px;
+    left: 0px;
+    z-index: 99;
+    background-position: center -70px;
+
+      -webkit-filter: blur(10px);
+      filter: url ('/media/blue.svg#blur');
+      filter: blur(10px);
+}
+
+#content-products {
+  position: relative;
+    z-index: 100;
+    padding: 20px;
+}
+
 .product_title {
-  font-size: 80px;
   text-shadow: 2px 2px 4px #424242;
-  color: #212121;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
 }
 .card_style {
   box-shadow: 10px 10px 5px grey;
 }
 
 .waves-effect {
-  margin-right: 30px;
+  margin-right: 10px;
 }
+
+
 .products_div {
   width: 45%;
   float: left;
@@ -109,21 +181,40 @@ p {
   margin-top: 7%;
 }
 
-.btn-xs {
-  width: 100% !important;
+.btn {
+  max-width: 100%;
+  height: auto;
 }
 
+.img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
 
+}
+
+.card-action {
+  opacity: 0.8;
+}
 /*>>>>>>>>>>>>>>>>>>>>> DEMOS >>>>>>>>>>>>>>>>>>>*/
+
+#backg {
+  height: 100vh;
+  background-image: url(asset_path('MagnificHome.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
 .tek_title {
-  font-size: 80px;
-  color: #212121;
   text-shadow: 2px 2px 4px #424242;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
 }
 
 .demo_title {
   font-size: 50px;
-  color: #212121;
+  color: white;
   text-shadow: 1px 1px 2px #424242;
   font-weight: bold;
 }
@@ -136,17 +227,52 @@ p {
 
 /*>>>>>>>>>>>>>>>>HOWTOBUY>>>>>>>>>>>>>>>>>>*/
 
+#how-back, #content-how  {
+  height: 100vh;
+  background-image: url(asset_path('MagnificHome.jpg'));
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#how-back {
+  background-poistion: center top;
+  padding: 70px 90px 120px 90px;
+}
+
+#content_container {
+  position: relative;
+}
+
+#content-how {
+  position: absolute;
+  min-width: auto;
+  height: auto;
+
+    top: 20px;
+    right: 0px;
+    bottom: -450px;
+    left: 0px;
+    z-index: 99;
+    background-position: center -130px;
+
+      -webkit-filter: blur(10px);
+      filter: url('/media/blur.svg#blur');
+      filter: blur(10px);
+
+}
+
+
 .purchase_title {
-  font-size: 70px;
-  color: #212121;
   text-shadow: 2px 2px 4px #424242;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
 }
 
 .how_to_title {
-  font-size: 40px;
-  color: #212121;
   text-shadow: 2px 2px 4px #424242;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: bold;
+  text-align: center;
 }
 
 .pro_image {
@@ -169,8 +295,6 @@ p {
   box-shadow: 10px 10px 5px grey;
   padding: 10px 20px
 }
-
-
 
 /*>>>>>>>>>>>>>>>>>>TEMPLATES<<<<<<<<<<<<<<<<<<<*/
 .img {

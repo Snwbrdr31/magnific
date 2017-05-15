@@ -5,43 +5,41 @@ import logoTASslides from '../images/logoTASslides.png';
 import ProfessionalImage from '../images/ProfessionalImage.jpg';
 
 
-class HowToBuy extends React.Component {
+const HowToBuy = () => (
+      <div id="how-back" className="row body_width">
+        <div className='col s12'>
+          <div id="content-container" className="container">
+            <div id="content-how"></div>
+              <div id="content">
+                <h1 className="center"><b className="purchase_title">Our Retailers</b></h1><hr />
+                <div>
 
-  render() {
-    return(
-      <div className="body_width howtobuy container">
-        <div className="responsive purchase_title">
-        <h2 className="center"><b className="purchase_title">Our Retailers</b></h2><hr />
-        </div>
-          <div className="row center">
-            <div className="col s12 m6">
-              <div className="center how_to_title">
-                <h2>United States</h2>
-              </div>
-                <div >
+                <div className="col s12 m6">
+                  <div className="center how_to_title">
+                    <h4>United States</h4>
+                  </div>
                   <div className="white" >
                     <div className="center z-depth-5">
-                    <a href="http://www.pro-image.com"><img className="responsive-img" src={ProfessionalImage} /></a>
+                      <a href="http://www.pro-image.com"><img className="responsive-img" src={ProfessionalImage} /></a>
                     </div>
                   </div>
                 </div>
-            </div>
 
-            <div className="col s12 m6" >
-              <div className="center how_to_title">
-                <h2>Canada</h2>
-              </div>
-              <div className="white" >
-                <div className="center z-depth-5">
-                  <a href="http://www.tasfilms.com"><img className="responsive-img" src={logoTASslides} /></a>
+                <div className="col s12 m6" >
+                  <div className="center how_to_title">
+                    <h4>Canada</h4>
+                  </div>
+                  <div className="white" >
+                    <div className="center z-depth-5">
+                      <a href="http://www.tasfilms.com"><img className="responsive-img" src={logoTASslides} /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-    )
-  }
-}
+      </div>
+)
 
 export default HowToBuy;
