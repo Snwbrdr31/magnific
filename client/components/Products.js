@@ -9,15 +9,15 @@ import Tek from '../images/Tek.png';
 import Uleds from '../images/Uleds.png';
 
 const Products = () => (
-    <div id="back" className="row body_width">
-      <div id="products-container" className="container">
-        <div id="products-bg"></div>
-          <div id="content-products">
+    <div id="pro-back" className="row body_width">
+      <div id="products-container" classname="container">
+        <div id="content-pro"></div>
+          <div id="content">
             <h1 className='center about_products'><b className='product_title'>PRODUCTS</b></h1><hr /><br />
               <br />
 
-                <div className="col s6 m4">
-                  <div className="card center z-depth-5">
+                <div className="col s12 m4">
+                  <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Base} />
                     </div>
@@ -28,7 +28,7 @@ const Products = () => (
                   </div>
                 </div>
 
-                <div className="col s6 m4">
+                <div className="col s12 m4">
                   <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Edge} />
@@ -40,7 +40,7 @@ const Products = () => (
                   </div>
                 </div>
 
-                <div className="col s6 m4">
+                <div className="col s12 m4">
                   <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Mod} />
@@ -52,7 +52,7 @@ const Products = () => (
                   </div>
                 </div>
 
-                <div className="col s6 m4">
+                <div className="col s12 m4">
                   <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Pro} />
@@ -63,8 +63,7 @@ const Products = () => (
                     </div>
                   </div>
                 </div>
-
-                <div className="col s6 m4">
+                <div className="col s12 m4">
                   <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Tek} />
@@ -76,7 +75,7 @@ const Products = () => (
                   </div>
                 </div>
 
-                <div className="col s6 m4">
+                <div className="col s12 m4">
                   <div className="card z-depth-5">
                     <div className="card-image">
                       <img src={Uleds} />

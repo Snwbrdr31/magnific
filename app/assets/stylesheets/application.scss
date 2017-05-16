@@ -90,7 +90,7 @@ p {
 
 .about_magnific {
   font-size: 20px;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   padding-left: 20px;
   padding-right: 20px;
   text-align: justify;
@@ -99,6 +99,8 @@ p {
 .paragraph {
   margin-left: 4%
 }
+
+
 /*>>>>>>>>>>>>>>>>NAVBAR >>>>>>>>>>>>>>>>>>>*/
 #nav {
   padding-left:20px;
@@ -119,14 +121,15 @@ p {
 
 /*>>>>>>>>>>>>>>>>>>>>>PRODUCTS>>>>>>>>>>>>>>>>>>> */
 
-#back, #products-bg {
-  height: 120vh;
+#pro-back, #content-pro {
+  height: 170vh;
   background-image: url(asset_path('MagnificHome.jpg'));
   background-repeat: no-repeat;
   background-size: 100% 100%;
+
 }
 
-#back {
+#pro-back {
   background-position: center top;
   padding: 70px 90px 120px 90px;
 }
@@ -135,22 +138,26 @@ p {
   position:relative;
 }
 
-#products-bg {
+#content-pro {
   position: absolute;
   min-width: auto;
-    top: 20px;
-    right: -10px;
-    bottom: -750px;
-    left: 0px;
-    z-index: 99;
-    background-position: center -70px;
+  height: auto;
 
-      -webkit-filter: blur(10px);
-      filter: url ('/media/blue.svg#blur');
-      filter: blur(10px);
+      top: 20px;
+      right: 0px;
+      bottom: -1150px;
+      left: 0px;
+      z-index: 99;
+      background-position: center -130px;
+        -moz-filter: blur(10px);
+        -ms-filter: blur(10px);
+        -webkit-filter: blur(10px);
+        filter: url ('/media/blue.svg#blur');
+        filter: blur(10px);
+
 }
 
-#content-products {
+#content{
   position: relative;
     z-index: 100;
     padding: 20px;
@@ -170,27 +177,9 @@ p {
 }
 
 
-.products_div {
-  width: 45%;
-  float: left;
-  background-color: white;
-  margin-right: 5%;
-  margin-bottom: 6%;
-}
-.products_page {
-  margin-top: 7%;
-}
-
 .btn {
   max-width: 100%;
-  height: auto;
-}
-
-.img {
-  max-width: 100%;
-  height: auto;
-  width: auto\9;
-
+  margin-bottom: 5px;
 }
 
 .card-action {
@@ -214,7 +203,7 @@ p {
 
 .demo_title {
   font-size: 50px;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   text-shadow: 1px 1px 2px #424242;
   font-weight: bold;
 }
@@ -261,7 +250,6 @@ p {
 
 }
 
-
 .purchase_title {
   text-shadow: 2px 2px 4px #424242;
   color: rgba(255, 255, 255, 0.9);
@@ -303,3 +291,63 @@ p {
  background: #000000;
 }
 /*>>>>>>>>>>>>>>>>MEDIA QUERIES<<<<<<<<<<<<<<<<<<*/
+
+@media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+  /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+  and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+  and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+  only screen and (-webkit-min-device-pixel-ratio : 1.5),
+  only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}

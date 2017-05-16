@@ -10,7 +10,7 @@ const Demos = () => (
 
       <div className="tek_demo">
         <div className="video-container">
-          <iframe width="300" height="350" src="https://www.youtube.com/embed/mwmwhtssSKQ" frameBorder="0" allowfullscreen></iframe>
+          <iframe width="350" height="197" src="https://www.youtube.com/embed/mwmwhtssSKQ" frameborder="0" allowfullscreen></iframe>
         </div>
         </div>
       </div>
